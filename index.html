@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora del Indice de Masa Corporal</title>
+	<link rel="stylesheet" href= "css/miestilo.css">
+</head>
+
+<body>
+	<h1>Calculadora de Indice de Masa Corporal</h1>
+	<p>Ingrese peso
+		<input type="radio" name="peso" value="Kg"> Kg
+		<input type="radio" name="peso" value="Libras"> Libras
+		<input type="text" id="peso">
+	</p>
+	<p>Ingrese Altura
+		<input type="radio" name="altura" value="cm"> cm
+		<input type="radio" name="altura" value="pulgadas"> pulgadas
+		<input type="text" id="altura">
+	</p>
+	<button id="calcular">Calcular</button>
+	<p>IMC: <span id="imc"></span></p>
+	<p>Lectura: <span id="lectura"></span></p>
+	<script src="calculadora.js"></script>
+</body>
+
+</html>
