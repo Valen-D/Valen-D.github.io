@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="IMC, calculadora de imc, calcula imc">
+    <meta name="autor" content="Valentina Doña">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule su IMC</title>
+    <meta name="description" content="Calcule su IMC (Índice de Masa Corporal)">
+    <!-- css -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <p>Indice de Masa Corporal</p>
+    </header>
+    <main>
+        <div class="main-bg">
+            <div class="container">
+                <div class="form">
+                    <div>
+                        <div class="form_peso">
+                            <label for="peso">Peso:</label>
+                            <input type="text" name="peso" id="peso" placeholder="(ex.: 69,2)"> 
+                        </div>
+                        <div class="form_altura">
+                            <label for="altura">Altura:</label>
+                            <input type="text" name="altura" id="altura" maxlength="4" placeholder=" (ex.: 1,70)">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="btn-calc">Calcular IMC</button>
+                        <button class="btn-limpa">Limpar</button>
+                    </div>
+                    <div>
+                        <span class="suImc">SU IMC: </span><span class="resultado-imc"></span>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Clasiufuicación</th>
+                                <th>IMC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="peso-bajo">
+                                <td>Bajo de Peso</td>
+                                <td>Abajo de 18,5</td>
+                            </tr>
+                            <tr class="peso-normal">
+                                <td>Peso Normal</td>
+                                <td>18,5 - 24,9</td>
+                            </tr>
+                            <tr class="sobrepeso">
+                                <td>Sobrepeso</td>
+                                <td>25 - 29,9</td>
+                            </tr>
+                            <tr class="obesidad-I">
+                                <td>Obesidad Grado I</td>
+                                <td>30 - 34,9</td>
+                            </tr>
+                            <tr class="obesidad-II">
+                                <td>Obesidad Grado II</td>
+                                <td>35 - 39,9</td>
+                            </tr>
+                            <tr class="obesidad-III">
+                                <td>Obesidad Grado III</td>
+                                <td>40 o Mayor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+        </div>
+        <div class="sections">
+            <section>
+                <h2>¿Qué es el IMC?</h2>
+                <p>El índice de masa corporal (IMC) es una medida internacional utilizada para calcular si una persona está en su peso ideal. Es un método fácil y rápido para evaluar el nivel de grasa de cada persona, y por lo tanto un predictor internacional de obesidad adoptado por la Organización Mundial de la Salud (OMS).</p>
+            </section>
+            <section>
+                <h2>¿Cómo se calcula el IMC?</h2>
+                <p>Para determinar el IMC, simplemente divida el peso (masa) del individuo por su altura al cuadrado. La masa debe definirse en kilogramos (kg) y la altura en metros (m).</p>
+                <img src="imagen\imgImc.jpg" alt="formula do calculo do imc">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Final Practica Profecionalizante I<br> Valentina Doña</p>
+    </footer>
+    <script src="calculadora.js"></script>
+</body>
+</html>
